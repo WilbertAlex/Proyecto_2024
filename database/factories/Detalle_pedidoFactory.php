@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\pedido;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -17,7 +18,10 @@ class Detalle_pedidoFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+
+            'cantidad' => $this->faker->randomNumber(2, true),
+            'precio_unitario' => $this->faker->randomFloat(2, 1, 100),
+            'pedido_id'=>pedido::all()->random()->id,
         ];
     }
 }

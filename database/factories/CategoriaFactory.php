@@ -16,8 +16,11 @@ class CategoriaFactory extends Factory
      */
     public function definition(): array
     {
+
         return [
-            //
+            'nombre'=>$this->faker->text(20),
+            'Descripción'=>$this->faker->text(150)
+
         ];
     }
 }

@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\pedido;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -17,7 +18,10 @@ class PagoFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'monto_pago' => $this->faker->randomFloat(2, 10, 500),
+            'fecha_envio' => $this->faker->date($format = 'Y-m-d', $max = 'now'),
+            'metodo'=>$this->faker->text(20),
+            'pedido_id'=>pedido::all()->random()->id,
         ];
     }
 }

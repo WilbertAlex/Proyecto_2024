@@ -17,7 +17,11 @@ class ClienteFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'nombre'=>$this->faker->text(20),
+            'telefono' => '9' . $this->faker->numberBetween(10000000, 99999999),
+            'correo' => $this->faker->userName . '@tu-dominio.com',
+            'direccion'=>$this->faker->text(20)
+
         ];
     }
 }

@@ -17,7 +17,13 @@ class ProveedorFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'nombre'=>$this->faker->text(50),
+            'contacto' => $this->faker->randomFloat(2, 10, 500),
+            'telefono' => '9' . $this->faker->numberBetween(10000000, 99999999),
+            'correo'=>$this->faker->text(50),
+            'direccion'=>$this->faker->text(50)
+
+
         ];
     }
 }
