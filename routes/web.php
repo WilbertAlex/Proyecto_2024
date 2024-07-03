@@ -25,6 +25,6 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 Route::get('/categorias',CategoriaLivewire::class)->name('categorias');
-Route::get('/instrumentpdf',[CategoriaLivewire::class,'reportepdf'])->name('instrumentpdf');
+Route::get('/categorypdf',[CategoriaLivewire::class,'reportepdf'])->name('categorypdf');
 
 });

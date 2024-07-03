@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Anillo;
+use App\Models\categoria;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
@@ -75,6 +76,13 @@ class AnilloSeeder extends Seeder
         ];
 
         // Insertar los datos en la tabla 'anillos'
-        DB::table('anillos')->insert($anillos);
+        foreach ($anillos as $anillo) {
+             Anillo::create([
+                'nombre' => $anillo['nombre'],
+                'descripcion' => $anillo['descripcion'],
+                'precio'=> $anillo['precio'],
+                'categoria_id'=> $anillo['categoria_id'],
+            ]);
+        }
     }
 }

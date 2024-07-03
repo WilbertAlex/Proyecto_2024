@@ -19,39 +19,39 @@ class CategoriaSeeder extends Seeder
         $categorias = [
             [
                 'nombre' => 'Anillos',
-                'descripción' => $faker->sentence,
+                'descripcion' => $faker->sentence,
             ],
             [
                 'nombre' => 'Aretes',
-                'descripción' => $faker->sentence,
+                'descripcion' => $faker->sentence,
             ],
             [
                 'nombre' => 'Pulseras',
-                'descripción' => $faker->sentence,
+                'descripcion' => $faker->sentence,
             ],
             [
                 'nombre' => 'Broches',
-                'descripción' => $faker->sentence,
+                'descripcion' => $faker->sentence,
             ],
             [
                 'nombre' => 'Relojes',
-                'descripción' => $faker->sentence,
+                'descripcion' => $faker->sentence,
             ],
             [
                 'nombre' => 'Alfileres',
-                'descripción' => $faker->sentence,
+                'descripcion' => $faker->sentence,
             ],
             [
                 'nombre' => 'Piercings',
-                'descripción' => $faker->sentence,
+                'descripcion' => $faker->sentence,
             ],
             [
                 'nombre' => 'Joyeria Corporal',
-                'descripción' => $faker->sentence,
+                'descripcion' => $faker->sentence,
             ],
             [
                 'nombre' => 'Joyeria para el cabello',
-                'descripción' => $faker->sentence,
+                'descripcion' => $faker->sentence,
             ],
         ];
 

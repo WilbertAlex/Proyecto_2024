@@ -18,5 +18,7 @@ class categoria extends Model
     {
         return $this->hasMany(Anillo::class);
     }
-
+    public function image(){
+        return $this->morphOne(Image::class,'imageable');
+    }
 }
